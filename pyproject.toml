@@ -1,0 +1,18 @@
+[project]
+name = "supportdesk-openenv"
+version = "0.1.0"
+description = "A real-world OpenEnv environment for customer support triage and resolution."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "pydantic>=2.8.0",
+  "uvicorn[standard]>=0.30.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["supportdesk_openenv*"]
